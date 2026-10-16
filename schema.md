@@ -21,5 +21,12 @@
 ## Etape 4:
 - *objectif: « Certains clients sont des habitués, je veux les reconnaître. Mais la plupart sont de passage et je ne leur demande rien. »*
 - je vais creer une table client( **id**, nom)
+- j'ajoute une colonne id_client dans la table commande
 - la cle etranger id_client dans la table commande n'est pas NOT NULL car le client n'est pas obligé etre reconnu 
 - Pour ne perdre aucune commande , on fait LEFT JOIN dont la table commande est a la partie gauche 
+
+## Etape 5:
+- *objectif: « Je veux savoir quel serveur a pris la commande et à quelle table. Pour les plats à emporter, il n'y a pas de table. »*
+- je vais creer la table salle(**id**, nom)
+- je vais creer la table table(**id**, nom, #id_salle)
+- je vais creer la table serveur(**id**, nom, #id_salle)
