@@ -10,6 +10,13 @@
 - Je dois creer une table categorie( **id**, nom );
 - j'ai ajoute une colonne id_categorie dans la table plats pour faire le lien entre les deux tables.
 - On n'a pas ajoute tout simplement une colonne categorie VARCHAR(50) dans la table plats car si on le fait a chaque fois , peut etre que l'utilisateur fait boisson, autre bosson, boisssons , et on ne peut pas regrouper la meme categorie. on n'a pas de cle unique si c'est pour cela 
+- La table plats devient plats (**id**, nom, prix, #id_categorie )
 
-## etap
+## Etape 3:
+- *Objectifs: « J'enregistre les commandes : la date, quels plats, et combien de chaque. »*
+- Je cree une table commande( **id**, descirption?, date_heure )
+- Je cree une table detail_commande( **id**, #id_commande, #id_plat, quantite, prix )
+- je vais placer la quantite dans la table detail_commande
+
+
 
