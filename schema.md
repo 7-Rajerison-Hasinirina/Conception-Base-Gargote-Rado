@@ -18,5 +18,8 @@
 - Je cree une table detail_commande( **id**, #id_commande, #id_plat, quantite, prix )
 - je vais placer la quantite dans la table detail_commande
 
-
-
+## Etape 4:
+- *objectif: « Certains clients sont des habitués, je veux les reconnaître. Mais la plupart sont de passage et je ne leur demande rien. »*
+- je vais creer une table client( **id**, nom)
+- la cle etranger id_client dans la table commande n'est pas NOT NULL car le client n'est pas obligé etre reconnu 
+- Pour ne perdre aucune commande , on fait LEFT JOIN dont la table commande est a la partie gauche 

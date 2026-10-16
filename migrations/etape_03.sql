@@ -19,4 +19,6 @@ CREATE TABLE detail_commande(
 
 INSERT INTO detail_commande(id_commande, id_plat, quantite, prix) VALUES
 (1,4, 2, 8000),
-(1,5, 2, 5000);
+(1,5, 2, 5000),
+(2,5, 3, 5000);
+

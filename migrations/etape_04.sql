@@ -1,0 +1,6 @@
+CREATE TABLE client(
+    id SERIAL PRIMARY KEY,
+    nom VARCHAR(100)
+);
+
+ALTER TABLE commande ADD COLUMN id_client INTEGER;
