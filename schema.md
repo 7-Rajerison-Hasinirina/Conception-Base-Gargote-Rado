@@ -35,3 +35,9 @@
 
 - Une table de la salle et une commande sont deux choses différentes:
 le nom table pose un probleme en sql car une commande n'est pas forcement a une table 
+
+## Etape 6:
+- *objectif: On paie en espèces, MVola, Orange Money ou Airtel Money. Parfois un client paie une partie en
+espèces et le reste par MVola. Pour le mobile money, je note la référence de la transaction. »
+- je vais creer la table mode_paiement(**id**, libelle)
+- je vais creer la table paiement(**id**, #id_commande, #id_mode_paiement, montant, staus_paiement)
