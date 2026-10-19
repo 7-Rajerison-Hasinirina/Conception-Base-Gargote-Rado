@@ -30,3 +30,8 @@
 - je vais creer la table salle(**id**, nom)
 - je vais creer la table table(**id**, nom, #id_salle)
 - je vais creer la table serveur(**id**, nom, #id_salle)
+- je vais creer la table status_commande(**id**, libelle)
+- je vais creer la table commande_serveur(**id**, #id_commande, #id_serveur, date_heure, id_status)
+
+- Une table de la salle et une commande sont deux choses différentes:
+le nom table pose un probleme en sql car une commande n'est pas forcement a une table 
